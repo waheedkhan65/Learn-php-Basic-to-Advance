@@ -45,7 +45,7 @@ foreach ($grocery as $category => $items) {
 
 echo "----------------------------------------------------------------<br>"; 
 
-
+ 
 // "In-array" and "Array_rsearch" functions for searching in arrays
 // The in_array() function checks if a value exists in an array and returns true or false
 // The array_search() function searches for a value in an array and returns the key if found, or false if not found
@@ -56,6 +56,36 @@ echo "<b> In-array and Array_rsearch functions for searching in arrays </b><br>"
 echo "----------------------------------------------------------------<br>"; 
 
 
+// Array flip function: flips the keys and values of an array. The keys become values and the values become keys.
+// The array_flip() function is useful when you want to reverse the mapping of an array.
+
+$array = [
+    'name' => "waheed",
+    'age' => 21,
+    'city' => "islamabad",
+];
+
+$newArray = array_flip($array);   // Flipping the keys and values of the array
+
+echo "flip the keys and values of the array <br>";
+echo "<pre>";
+print_r($newArray);
+echo "</pre>";
+
+
+echo "----------------------------------------------------------------<br>"; 
+
+
+//Array_change_key_case function: changes the case of all keys in an array to either upper or lower case.
+// The array_change_key_case() function is useful when you want to standardize the case of the keys in an array.
+
+
+$newArray2 = array_change_key_case($array, CASE_LOWER);   // Changing the case of all keys in the array to lower case
+
+echo "change the case of keys into lower <br>";
+echo "<pre>";       // "<pre> tag" is used for better formatting of the output
+print_r($newArray2);
+echo "</pre>";
 
 
 ?>
