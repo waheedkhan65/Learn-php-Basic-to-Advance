@@ -15,10 +15,13 @@ echo "Integer: " . $intValue . "<br>";
 echo "Float: " . $floatValue . "<br>";
 echo "Boolean: " . ($boolValue ? "true" : "false") . "<br>";
 
+echo "------------------------------------<br>";
+
 echo "Array values:<br>";
 foreach ($arrayValue as $fruit) {
     echo "- " . $fruit . "<br>";
 }
+echo "------------------------------------<br>";
 
 echo "Null value: " . var_export($nullValue, true) . "<br>";
 
