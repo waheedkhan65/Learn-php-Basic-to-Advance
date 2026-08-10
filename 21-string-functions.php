@@ -48,6 +48,20 @@ echo "   stripos('php') (case-insensitive) -> ";
 echo var_export(stripos($sample, 'php'), true) . PHP_EOL;
 echo "---------------------------------------------<br>";
 
+// 7) Replace: str_replace and str_ireplace
+echo "7) str_replace — replace 'World' with 'Universe': '" . str_replace('World', 'Universe', $sample) . "'" . PHP_EOL;
+echo "   str_ireplace — case-insensitive replace 'php' with 'Python': '" . str_ireplace('php', 'Python', $sample) . "'" . PHP_EOL;
+echo "---------------------------------------------<br>";
+
+// 8) Compare: strcmp (case-sensitive) and strcasecmp (case-insensitive)
+echo "8) strcmp('abc','ABC') => " . strcmp('abc', 'ABC') . "  (0 means equal)" . PHP_EOL;
+echo "   strcasecmp('abc','ABC') => " . strcasecmp('abc', 'ABC') . "  (case-insensitive)" . PHP_EOL;
+echo "---------------------------------------------<br>";
+
+// 9) Shuffle: str_shuffle — randomize string characters
+echo "9) str_shuffle — shuffle '" . $sample . "': '" . str_shuffle($sample) . "'" . PHP_EOL;
+echo "---------------------------------------------<br>";
+
 
 
 
