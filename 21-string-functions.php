@@ -62,7 +62,17 @@ echo "---------------------------------------------<br>";
 echo "9) str_shuffle — shuffle '" . $sample . "': '" . str_shuffle($sample) . "'" . PHP_EOL;
 echo "---------------------------------------------<br>";
 
+// 10) Trim functions: trim, ltrim, rtrim — remove whitespace
+$raw = "  user@example.com  ";
+echo "10) raw: '" . $raw . "'" . PHP_EOL;
+echo "    trim: '" . trim($raw) . "'" . PHP_EOL;
+echo "    ltrim: '" . ltrim($raw) . "'" . PHP_EOL;
+echo "    rtrim: '" . rtrim($raw) . "'" . PHP_EOL;
+echo "---------------------------------------------<br>";
 
+echo "Notes: use mb_* functions for multibyte (UTF-8) strings when needed." . PHP_EOL;
+
+echo "</pre>";
 
 
 ?>
