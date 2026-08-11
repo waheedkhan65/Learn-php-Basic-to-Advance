@@ -9,8 +9,8 @@ $str = "hello students, 'single quotes' and \"double qoutes\", <b>bold</b> <br>"
 
 // htmlentities() function
 
-// echo htmlentities($str); // Convert all applicable characters to HTML entities.
-// echo "<br>";
+echo htmlentities($str); // Convert all applicable characters to HTML entities.
+echo "<br>";
 // echo htmlentities($str, ENT_QUOTES); // Convert all applicable characters to HTML entities including single and double quotes.
 // echo "<br>";
 // echo htmlentities($str, ENT_NOQUOTES); // Convert all applicable characters to HTML entities excluding single and double quotes.
@@ -19,6 +19,15 @@ $str = "hello students, 'single quotes' and \"double qoutes\", <b>bold</b> <br>"
 // ###########################################################
 
 echo htmlspecialchars($str); // This function also work as it is like html entities function , and also convert special characters to HTML entities. But it only converts the most common special characters like &, ", ', <, and >. It does not convert all applicable characters like htmlentities() function.
+echo "<br>";
+// ###########################################################
+
+// To decode the html entities and html special charachter function back to their original characters,
+// we use html_entity_decode() and htmlspecialchars_decode() functions.
+
+echo "this is html entities decode :", html_entity_decode(htmlentities($str)); 
+echo "<br>";
+echo "this is html special charachter decode :", htmlspecialchars_decode(htmlspecialchars($str));
 
 
 ?>
